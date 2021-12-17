@@ -1,0 +1,7 @@
+{
+PrimeRange.c
+Write a program to store primes in a range using dynamic array.
+Note: Should not count the number of primes and allocate memory
+Better to use only realloc
+}
+
