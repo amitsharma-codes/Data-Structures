@@ -11,3 +11,4 @@ replaceSubStrings.c
 W.A.P to replace a substring in a whole string.
 Note: The array size should be variable, only use DMA
 }
+
