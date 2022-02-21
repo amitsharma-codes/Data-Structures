@@ -19,6 +19,8 @@ struct student* removeLast(struct student* ptr)
 		free(temp);               //free the memory
 		if(prev)
 			prev->link=NULL;  //put NULL in the previous node's link
+		else
+			ptr=NULL;
 	}
 	return ptr;
 }
