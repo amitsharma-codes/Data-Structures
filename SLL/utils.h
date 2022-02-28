@@ -19,3 +19,4 @@ void printPrime(struct student* ptr);
 struct student* DelAll(struct student* ptr);
 void printn(struct student* ptr);
 void printnLast(struct student* ptr);
+void check(struct student* ptr);
