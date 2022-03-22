@@ -15,13 +15,16 @@ struct student *addSorted(struct student* ptr)
 		ptr=newnode;
 	else
 	{
+		temp=ptr;
 		while(temp&&(temp->roll<newnode->roll))
 		{
 			prev=temp;
 			temp=temp->link;
 		}
-		prev->link=newnode;
+		if(temp!=ptr)
+			prev->link=newnode;
 		newnode->link=temp;
 	}
 #endif
+	return ptr;
 }

@@ -1,5 +1,5 @@
-studentRecord.exe: linkedlist.o addLast.o removeLast.o display.o addFirst.o removeFirst.o sorted.o middleNode.o printPrime.o Del_all.o printnth.o printnLast.o check_SLL_CLL.o
-	gcc linkedlist.o addLast.o removeLast.o display.o addFirst.o removeFirst.o sorted.o middleNode.o printPrime.o Del_all.o printnth.o printnLast.o check_SLL_CLL.o -o studentRecord.exe
+studentRecord.exe: linkedlist.o addLast.o removeLast.o display.o addFirst.o removeFirst.o sorted.o middleNode.o printPrime.o Del_all.o printnth.o printnLast.o check_SLL_CLL.o saveFile.o sync.o
+	gcc linkedlist.o addLast.o removeLast.o display.o addFirst.o removeFirst.o sorted.o middleNode.o printPrime.o Del_all.o printnth.o printnLast.o check_SLL_CLL.o saveFile.o sync.o -o studentRecord.exe
 linkedlist.o: linkedlist.c
 	gcc -c linkedlist.c -o linkedlist.o
 addLast.o: addLast.c
@@ -25,4 +25,8 @@ printnth.o: printnth.c
 printnLast.o: printnLast.c
 	gcc -c printnLast.c -o printnLast.o
 check_SLL_CLL.o: check_SLL_CLL.c
-	gcc -c check_SLL_CLL.c
+	gcc -c check_SLL_CLL.c -o check_SLL_CLL.o
+saveFile.o: saveFile.c
+	gcc -c saveFile.c -o saveFile.o
+sync.o: sync.c
+	gcc -c sync.c -o sync.o

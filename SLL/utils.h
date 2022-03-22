@@ -20,3 +20,5 @@ struct student* DelAll(struct student* ptr);
 void printn(struct student* ptr);
 void printnLast(struct student* ptr);
 void check(struct student* ptr);
+void save(struct student* ptr);
+struct student* sync();
